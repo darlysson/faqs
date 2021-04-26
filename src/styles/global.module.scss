@@ -16,6 +16,12 @@
     background: var(--purple);
     -webkit-font-smoothing: antialiased;
     font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   html { 
@@ -29,7 +35,6 @@
 
   main {
     max-width: 1000px;
-    margin: 2.5rem auto;
     padding: 1.5rem 2rem;
     background: var(--light-gray);
     border-radius: 0.25rem;
@@ -50,5 +55,22 @@
       flex-direction: column;
       margin-left: 3rem;
       flex-basis: 70%;
+    }
+    .loading {
+      width: 7rem;
+      height: 7rem;
+      display: flex;
+      align-self: center;
+      color: var(--dark-blue);
+      animation: rotation 1.5s infinite linear;
+    }
+
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
   }
