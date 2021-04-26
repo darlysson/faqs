@@ -1,0 +1,48 @@
+  section {
+    & + section {
+      margin-top: 1.5rem
+    }
+  
+    .question {
+      box-shadow: 0 5px 15px rgba(221, 93, 168, 0.1);
+      background: #FFFFFF;
+      border-radius: 0.25rem;
+      padding: 1rem;
+      
+        header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+          font-size: 1.1rem;
+          font-weight: bold;
+          color: var(--dark-blue);
+          letter-spacing: 0.05rem;
+        }
+
+        button {
+          cursor: pointer;
+          background: none;
+          border: none;
+
+          svg {
+            background-color: var(--light-gray);
+            font-weight: 500;
+            border-radius: 50%;
+            height: 2rem;
+            width: 2rem;
+          }
+        }
+      }
+
+      .content {
+        p {
+          font-size: 1rem;
+          color: var(--dark-blue);
+          line-height: 1.6rem;
+          padding-top: 1rem;
+        }
+      }
+    }
+  }

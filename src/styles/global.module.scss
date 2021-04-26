@@ -1,0 +1,54 @@
+:root {
+  --dark-blue: #102a42;
+  --light-blue: #49A6E9;
+  --light-gray: #F1F5F8;
+  --purple: #45357a;
+  --text: #617D98;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body { 
+    background: var(--purple);
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  html { 
+    @media (max-width: 1080px) {
+      font-size: 93.75%
+    }
+    @media (max-width: 720px) {
+      font-size: 87.5%
+    }
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 2.5rem auto;
+    padding: 1.5rem 2rem;
+    background: var(--light-gray);
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: flex-start;
+
+    h1 {
+      color: var(--dark-blue);
+      font-size: 1.8rem;
+      color: var(--dark-blue);
+      font-weight: normal;
+      text-transform: capitalize;
+      flex-basis: 30%;
+    }
+    
+    .faqsGroup {
+      display: flex;
+      flex-direction: column;
+      margin-left: 3rem;
+      flex-basis: 70%;
+    }
+  }
