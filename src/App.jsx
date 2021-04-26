@@ -6,9 +6,11 @@ function App() {
   const [faqs, setFaqs] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3004/faqs').then((response) => {
-      response.json().then((faq) => setFaqs(faq))
-    })
+    fetch('https://my-json-server.typicode.com/darlysson/faqs/faqs').then(
+      (response) => {
+        response.json().then((faq) => setFaqs(faq))
+      }
+    )
   }, [])
 
   return (
